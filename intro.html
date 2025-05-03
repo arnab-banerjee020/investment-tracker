@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investment Tracker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    
+   <header>
+        <img src="./images/pd_logo.png" alt="Brand Logo" class="logo">
         <h1>Welcome to the Investment Tracking !</h1>
 
-        <h3>Log In To Your Account</h3>
+    </header>
+    <main>
+     <section class="card">
+        <h3>Log In</h3>
         <form>
-            <p><strong>Username: </strong><input type="email" name="username" id="username"> </p>
-            <p><strong>Password: </strong> <input type="password" name="password" id="password"></p>
-            <p><button type="submit"> Sign In </button></p>
+            <label for="username">Email</label>
+            <input type="email" name="username" id="username" placeholder="Username">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password">
+
+            <button type="submit"> Sign In </button> 
+            <p>Create a new Account?</p>
         </form>
+     </section>
+    </main>
     <footer>
-        <p>This is a copywright of Poku&Dobu &copy;</p>
+        <p>This is a copyright of Poku & Dobu &copy;</p>
     </footer>
 </body>
 </html>
