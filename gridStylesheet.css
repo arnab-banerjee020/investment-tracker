@@ -1,0 +1,113 @@
+body, .container{
+    margin: 0;
+    padding: 0;
+    background-size: cover;     
+    background-position: center;
+    font-family: Poppins;
+    background-image: url('./images/kurp5.jpg');
+
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 'header header header'
+     'main-sidebar main-sidebar main-sidebar' 
+     'footer footer footer';
+}
+    
+/* .box{
+    padding: 8px;
+    border: 2px solid black;
+    background-color: red;
+}
+.box:nth-child(even){
+    background-color: blue;
+} */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px;
+    /* border: 2px solid skyblue; */
+    border-radius: 8px;
+}
+.header h1{
+    font-style: italic;
+    margin-right: 20px;
+}
+.logo{
+    max-width: 110px;
+    height: auto;
+}
+.main-sidebar{
+    display: grid;
+    grid-template-areas: 'main main sidebar';
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    /* border: 2px solid rgb(247, 0, 255); */
+    height: 78vh;
+}
+
+/* .main-container{
+   height: fit-content; 
+    
+} */
+.main-content{
+    border-radius: 8px;
+    /* border: 2px solid rgb(182, 250, 10); */
+    /* background-color: #514646;  */
+    color:black;
+    height: 100%;   
+    
+}
+.main-content h3{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+
+}
+
+.sidebar-container{
+    /* border: 2px solid black; */
+    border-radius: 8px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid rgb(2, 249, 249); */
+    padding: 12px;
+}
+ form input{
+    padding: 12px;
+    border-radius: 4px;
+    border: 0.5px solid black;
+    margin-bottom: 10px;
+}
+form button{
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(235, 80, 80);
+    font-size: large;    
+}
+form a{
+    color:red;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.footer{
+    /* border: 2px solid rgb(245, 2, 2); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    
+}
+
+.footer p{
+    color: navy;
+}

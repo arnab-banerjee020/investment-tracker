@@ -1,0 +1,194 @@
+/* General Reset */
+body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      /* background: linear-gradient(135deg, #e0e0e0, #ffffff); */
+      color: #333;
+      background: 
+    linear-gradient(135deg, rgba(224, 224, 224, 0.6), rgba(255, 255, 255, 0.6)),
+    url('./images/kurp5.jpg');
+    
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+    }
+    
+    /* Grid Layout */
+    .container {
+      display: grid;
+      grid-template-areas:
+        'logobar aboutBar aboutBar'
+        'footer footer footer';
+      grid-template-columns: 1fr 2fr;
+      min-height: 100vh;
+    }
+    
+    /* Logo Area */
+    .logoSide {
+      /* background-color: #fff; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* .logoSide img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      transition: transform 0.3s ease-in-out;
+    } */
+    
+    
+     .logoSide img{
+        height: 80%;
+        border-radius: 12px;
+        padding: 2rem;
+        transition: transform 0.3s ease-in-out;
+    }
+    .logoSide img:hover {
+      transform: scale(1.05);
+    }
+    
+    /* About Section */
+    .aboutSection {
+      padding: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background: rgba(255, 255, 255, 0.5);
+      /* backdrop-filter: blur(6px); */
+      overflow-y: auto;
+    }
+    
+    /* Card Styling */
+    .card {
+      background: rgba(229, 227, 227, 0.8);
+      backdrop-filter: blur(8px);
+      padding: 1rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 900px;
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    
+    /* Header Styling */
+    .header h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #1d3557;
+    }
+    
+    /* Content Paragraphs */
+    .landingContent p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    
+    .landingContent ul {
+      margin-left: 1.5rem;
+      margin-bottom: 0.80rem;
+    }
+    
+    .landingContent li {
+      margin-bottom: 0.5rem;
+    }
+    
+    /* Form Section */
+    .formPage {
+      margin-top: 1rem;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .formPage h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+    }
+    
+    .formPage input {
+      display: block;
+      width: 96%;
+      padding: 0.75rem 1rem;
+      margin: 0.5rem 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+    
+    .formPage input:focus {
+      outline: none;
+      border-color: #457b9d;
+      box-shadow: 0 0 5px rgba(69, 123, 157, 0.5);
+    }
+    
+    .formPage button {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #1d3557;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    
+    .formPage button:hover {
+      background-color: #457b9d;
+    }
+    
+    .formPage a {
+      display: block;
+      text-align: center;
+      margin-top: 0.75rem;
+      color: #1d3557;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .formPage a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Footer Styling */
+    .footer {
+      grid-area: footer;
+      text-align: center;
+      padding: 1.5rem;
+      /* background-color: #f7f7f7; */
+      font-weight: bold;  
+      color: #444;
+      font-size: 0.9rem;
+      border-top: 1px solid #ddd;
+    }
+    
+    .footer address {
+      font-style: normal;
+    }
+    
+    .footer a {
+      color: #2c5184;
+      text-decoration: none;
+    }
+    
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    
